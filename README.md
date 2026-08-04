@@ -88,18 +88,13 @@ Vercel → Project → **Settings → Environment Variables** (all environments)
 |---|---|
 | `GITHUB_TOKEN` | the fine-grained token from step 3 |
 | `GITHUB_REPO` | `<owner>/<repo>` |
-| `ADMIN_EMAILS` | comma-separated, e.g. `lupinenes@hotmail.com,haktan@haktanefe.com` |
+| `GOOGLE_CLIENT_ID` | the client ID from step 4 |
+| `ADMIN_EMAILS` | the admin Google accounts, comma-separated |
 
-Optional:
+Optional: `GITHUB_BRANCH` if the default branch is not `main`.
 
-| Name | Value |
-|---|---|
-| `GOOGLE_CLIENT_ID` | only to use a different OAuth client — the current one is the default in `api/_lib/config.js` |
-| `GITHUB_BRANCH` | only if the default branch is not `main` |
-
-> If sign-in seems to use the wrong client, a leftover `GOOGLE_CLIENT_ID` is
-> overriding the built-in one. `GET /api/config` reports `clientIdSource` as either
-> `env` or `built-in`, which settles it in one request.
+`GET /api/config` echoes back the client id the deployment is actually using, which
+is the quickest way to confirm this is set the way you think it is.
 
 **Redeploy after adding them** — functions only pick up env vars on a new deployment.
 

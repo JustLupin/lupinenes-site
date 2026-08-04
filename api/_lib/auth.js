@@ -24,7 +24,7 @@ export async function requireAdmin(req) {
   /* Same source the sign-in button uses, so the audience check can never drift
      from the client that actually issued the token. */
   const clientId = googleClientId();
-  if (!clientId) throw new HttpError(500, 'no google client id is configured');
+  if (!clientId) throw new HttpError(500, 'GOOGLE_CLIENT_ID is not configured');
 
   const allowed = allowList();
   if (!allowed.length) throw new HttpError(500, 'ADMIN_EMAILS is not configured');
