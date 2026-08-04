@@ -12,6 +12,7 @@ var STATUS_KEYS = { online: 1, busy: 1, dnd: 1, offline: 1 };
 
 var built = false;
 var draft = null;                 /* working copy; only pushed live on save */
+var published = null;             /* last known published state, for discarding a preview */
 var undoStack = [];
 var gsiLoading = false;
 
@@ -684,6 +685,8 @@ function onCredential(res) {
 /* ---- open / close --------------------------------------------------------- */
 
 function openAdmin() {
+  /* what is actually live, so closing can throw away an unsaved preview */
+  published = clone(S.state);
   draft = clone(S.state);
   undoStack = [];
   buildAdmin();
@@ -694,7 +697,7 @@ function openAdmin() {
 function closeAdmin() {
   if ($('admin')) $('admin').hidden = true;
   document.body.style.overflow = '';
-  S.reload(clone(S.state));           /* drop any unsaved preview */
+  if (published) S.reload(clone(published));
 }
 function isOpen() {
   return built && ((!$('admin').hidden) || (!$('gate').hidden));
@@ -739,7 +742,10 @@ function build() {
     btn.textContent = 'saving…';
     apiPost('/api/save', { content: draft })
       .then(function (j) {
-        draft = j.content;
+        draft = j.content;                 /* the sanitised version the server actually stored */
+        published = clone(j.content);
+        undoStack = [];
+        $('a-undo').disabled = true;
         S.reload(clone(draft));
         buildAdmin();
         toast('saved — the live site updates in about 40 seconds');
@@ -755,6 +761,7 @@ function build() {
       .then(function (d) {
         S.reload(d);
         draft = clone(S.state);
+        published = clone(S.state);
         undoStack = [];
         buildAdmin();
         $('a-undo').disabled = true;
