@@ -1,0 +1,176 @@
+{
+  "status": "online",
+  "discordId": "983802898041425920",
+  "avatar": "/uploads/avatar.webp",
+  "banner": null,
+  "bgColor": "#8c8c8c",
+  "bgScale": 1,
+  "links": [
+    { "id": "l1", "icon": "yt", "label": "@LupinEnes", "url": "https://www.youtube.com/@LupinEnes" },
+    { "id": "l2", "icon": "ig", "label": "@enes.lupin", "url": "https://www.instagram.com/enes.lupin/" },
+    { "id": "l3", "icon": "x", "label": "@LupinEnes009", "url": "https://x.com/LupinEnes009" },
+    { "id": "l4", "icon": "th", "label": "@enes.lupinium", "url": "https://www.threads.net/@enes.lupinium" },
+    { "id": "l5", "icon": "yt", "label": "@TheCommaSquad", "url": "https://www.youtube.com/@TheCommaSquad" }
+  ],
+  "logs": [
+    {
+      "id": "g1",
+      "rows": [
+        { "id": "g1r1", "name": "osu!", "url": "https://osu.ppy.sh/users/29566728" },
+        { "id": "g1r2", "name": "Minecraft", "url": "https://tr.namemc.com/profile/JustLupin.1" },
+        { "id": "g1r3", "name": "Roblox", "url": "https://www.roblox.com/users/2692034476/profile" },
+        { "id": "g1r4", "name": "Stardew Valley", "url": "" },
+        { "id": "g1r5", "name": "Counter-Strike 2", "url": "" },
+        { "id": "g1r6", "name": "OneShot", "url": "" }
+      ]
+    },
+    {
+      "id": "g2",
+      "rows": [
+        { "id": "g2r1", "name": "Made in Abyss", "url": "" },
+        { "id": "g2r2", "name": "Dr. Stone", "url": "" },
+        { "id": "g2r3", "name": "Berserk", "url": "" },
+        { "id": "g2r4", "name": "Mushoku Tensei: Jobless Reincarnation", "url": "" },
+        { "id": "g2r5", "name": "My Hero Academia", "url": "" }
+      ]
+    },
+    {
+      "id": "g3",
+      "rows": [
+        { "id": "g3r1", "name": "SCP: Site Roleplay", "url": "https://www.roblox.com/games/3226555017/SCP-Site-Roleplay" },
+        { "id": "g3r2", "name": "Parkour Reborn", "url": "https://www.roblox.com/games/11639495622/PARKOUR-Reborn-Alpha" },
+        { "id": "g3r3", "name": "A Long Road", "url": "https://www.roblox.com/games/18934709778/A-Long-Road-BETA" },
+        { "id": "g3r4", "name": "99 Nights in the Forest", "url": "https://www.roblox.com/games/79546208627805/99-Nights-in-the-Forest" },
+        { "id": "g3r5", "name": "Restaurant Tycoon 3", "url": "https://www.roblox.com/games/119048529960596/WINTER-Restaurant-Tycoon-3" },
+        { "id": "g3r6", "name": "The Minefields", "url": "https://www.roblox.com/games/83176487660087/The-Minefields" }
+      ]
+    }
+  ],
+  "sections": [],
+  "langs": [
+    {
+      "code": "en",
+      "label": "EN",
+      "texts": {
+        "username": "LupinEnes",
+        "tagline": "interested in: coding · photography · 3d · pixel art",
+        "bio": "Hi! I’m Enes. I’m interested in a lot of things like coding, photography, 3D modeling, drawing, pixel art, and 3D printers — and I’m always trying to learn more. I love playing games, talking with my friends, watching anime, and reading manga!",
+        "aboutLabel": "About",
+        "statusLabels": { "online": "online", "busy": "idle", "dnd": "do not disturb", "offline": "offline" },
+        "links": [
+          { "id": "l1", "note": "YouTube (alt)" },
+          { "id": "l2", "note": "Instagram" },
+          { "id": "l3", "note": "X" },
+          { "id": "l4", "note": "Threads" },
+          { "id": "l5", "note": "The Comma Squad — the YouTube channel I started with my group of friends!" }
+        ],
+        "logs": [
+          {
+            "id": "g1",
+            "title": "games.log",
+            "lead": "If I were to talk about the games I like:",
+            "tail": "…are definitely among my favorites.",
+            "rows": [
+              { "id": "g1r1", "note": "" },
+              { "id": "g1r2", "note": "" },
+              { "id": "g1r3", "note": "(only some high-quality games)" },
+              { "id": "g1r4", "note": "" },
+              { "id": "g1r5", "note": "" },
+              { "id": "g1r6", "note": "" }
+            ]
+          },
+          {
+            "id": "g2",
+            "title": "anime.log",
+            "lead": "I’m also a huge anime fan. My top five would be:",
+            "tail": "",
+            "rows": [
+              { "id": "g2r1", "note": "" },
+              { "id": "g2r2", "note": "" },
+              { "id": "g2r3", "note": "" },
+              { "id": "g2r4", "note": "" },
+              { "id": "g2r5", "note": "(Having a toxic fanbase doesn’t mean the anime itself is bad)" }
+            ]
+          },
+          {
+            "id": "g3",
+            "title": "roblox.log",
+            "lead": "I also have a few favorite Roblox games. My top six would be:",
+            "tail": "",
+            "rows": [
+              { "id": "g3r1", "note": "" },
+              { "id": "g3r2", "note": "" },
+              { "id": "g3r3", "note": "" },
+              { "id": "g3r4", "note": "(it can be pretty fun when I play with my friends)" },
+              { "id": "g3r5", "note": "" },
+              { "id": "g3r6", "note": "" }
+            ]
+          }
+        ],
+        "sections": []
+      }
+    },
+    {
+      "code": "tr",
+      "label": "TR",
+      "texts": {
+        "username": "LupinEnes",
+        "tagline": "ilgilendiğim şeyler: kodlama · fotoğrafçılık · 3d · pixel art",
+        "bio": "Selam! Ben Enes. Kodlama, fotoğrafçılık, 3D modelleme, çizim, pixel art ve 3D yazıcılar gibi birçok şeyle ilgileniyorum — ve her zaman daha fazlasını öğrenmeye çalışıyorum. Oyun oynamayı, arkadaşlarımla sohbet etmeyi, anime izlemeyi ve manga okumayı çok seviyorum!",
+        "aboutLabel": "Hakkımda",
+        "statusLabels": { "online": "çevrimiçi", "busy": "boşta", "dnd": "rahatsız etmeyin", "offline": "çevrimdışı" },
+        "links": [
+          { "id": "l1", "note": "YouTube (alternatif)" },
+          { "id": "l2", "note": "Instagram" },
+          { "id": "l3", "note": "X" },
+          { "id": "l4", "note": "Threads" },
+          { "id": "l5", "note": "The Comma Squad — arkadaş grubumla birlikte açtığım YouTube kanalı!" }
+        ],
+        "logs": [
+          {
+            "id": "g1",
+            "title": "oyunlar.log",
+            "lead": "Sevdiğim oyunlardan bahsedecek olursam:",
+            "tail": "…kesinlikle favorilerim arasında.",
+            "rows": [
+              { "id": "g1r1", "note": "" },
+              { "id": "g1r2", "note": "" },
+              { "id": "g1r3", "note": "(sadece bazı kaliteli oyunlar)" },
+              { "id": "g1r4", "note": "" },
+              { "id": "g1r5", "note": "" },
+              { "id": "g1r6", "note": "" }
+            ]
+          },
+          {
+            "id": "g2",
+            "title": "anime.log",
+            "lead": "Ayrıca büyük bir anime hayranıyım. İlk beşim şöyle olurdu:",
+            "tail": "",
+            "rows": [
+              { "id": "g2r1", "note": "" },
+              { "id": "g2r2", "note": "" },
+              { "id": "g2r3", "note": "" },
+              { "id": "g2r4", "note": "" },
+              { "id": "g2r5", "note": "(fan kitlesi toksik diye animenin kendisi kötü olmuyor)" }
+            ]
+          },
+          {
+            "id": "g3",
+            "title": "roblox.log",
+            "lead": "Birkaç favori Roblox oyunum da var. İlk altım şöyle olurdu:",
+            "tail": "",
+            "rows": [
+              { "id": "g3r1", "note": "" },
+              { "id": "g3r2", "note": "" },
+              { "id": "g3r3", "note": "" },
+              { "id": "g3r4", "note": "(arkadaşlarımla oynayınca bayağı eğlenceli olabiliyor)" },
+              { "id": "g3r5", "note": "" },
+              { "id": "g3r6", "note": "" }
+            ]
+          }
+        ],
+        "sections": []
+      }
+    }
+  ]
+}

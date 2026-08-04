@@ -1,0 +1,17 @@
+{
+  "name": "lupinenes-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Personal site for LupinEnes — static front end, Vercel functions, content committed to the repo.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node test/sanitize.test.mjs",
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "jose": "^6.0.11"
+  }
+}
