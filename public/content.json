@@ -2,9 +2,9 @@
   "status": "online",
   "discordId": "983802898041425920",
   "avatar": "/uploads/avatar.webp",
-  "banner": "/uploads/banner-4a7271b6be.webp",
+  "banner": "/uploads/banner-e3ec885606.webp",
   "bgColor": "#8c8c8c",
-  "bgScale": 1,
+  "bgScale": 0.7,
   "links": [
     {
       "id": "l1",
@@ -158,7 +158,7 @@
         "links": [
           {
             "id": "l1",
-            "note": "YouTube (alt)"
+            "note": "YouTube"
           },
           {
             "id": "l2",
@@ -174,7 +174,7 @@
           },
           {
             "id": "l5",
-            "note": "The Comma Squad — the YouTube channel I started with my group of friends!"
+            "note": "The Comma Squad"
           }
         ],
         "logs": [
@@ -291,7 +291,7 @@
         "links": [
           {
             "id": "l1",
-            "note": "YouTube (alternatif)"
+            "note": "YouTube"
           },
           {
             "id": "l2",
@@ -307,7 +307,7 @@
           },
           {
             "id": "l5",
-            "note": "The Comma Squad — arkadaş grubumla birlikte açtığım YouTube kanalı!"
+            "note": "The Comma Squad"
           }
         ],
         "logs": [
