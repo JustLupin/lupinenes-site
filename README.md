@@ -69,13 +69,16 @@ console.cloud.google.com
    email → Save. It can stay in *Testing*; add the admin emails under **Test users**.
 3. **APIs & Services → Credentials → Create Credentials → OAuth client ID**
    → Application type **Web application**.
-4. Under **Authorized JavaScript origins** add — both matter:
+4. Under **Authorized JavaScript origins** add every address the site is reachable on:
    - `https://lupinenes.pp.ua`
+   - `https://www.lupinenes.pp.ua` — **`www` is a separate origin to Google**, and
+     Vercel adds the apex↔www redirect on its own
    - `http://localhost:3000` (only if you want the admin panel to work locally)
 5. Copy the **Client ID**. (The client *secret* is not used and never leaves Google.)
 
-> Sign-in only works on an origin listed here. If the panel says the origin is not
-> allowed, this list is what to check.
+> Sign-in only works on an origin listed here — that is what `Error 400:
+> origin_mismatch` means. The sign-in dialog prints the page's exact origin, so
+> paste that string in rather than guessing which variant is being used.
 
 ### 5. Set the environment variables
 
@@ -85,10 +88,18 @@ Vercel → Project → **Settings → Environment Variables** (all environments)
 |---|---|
 | `GITHUB_TOKEN` | the fine-grained token from step 3 |
 | `GITHUB_REPO` | `<owner>/<repo>` |
-| `GOOGLE_CLIENT_ID` | the client ID from step 4 |
 | `ADMIN_EMAILS` | comma-separated, e.g. `lupinenes@hotmail.com,haktan@haktanefe.com` |
 
-Optional: `GITHUB_BRANCH` if the default branch is not `main`.
+Optional:
+
+| Name | Value |
+|---|---|
+| `GOOGLE_CLIENT_ID` | only to use a different OAuth client — the current one is the default in `api/_lib/config.js` |
+| `GITHUB_BRANCH` | only if the default branch is not `main` |
+
+> If sign-in seems to use the wrong client, a leftover `GOOGLE_CLIENT_ID` is
+> overriding the built-in one. `GET /api/config` reports `clientIdSource` as either
+> `env` or `built-in`, which settles it in one request.
 
 **Redeploy after adding them** — functions only pick up env vars on a new deployment.
 

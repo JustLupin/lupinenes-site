@@ -1,4 +1,5 @@
 import { createRemoteJWKSet, jwtVerify } from 'jose';
+import { googleClientId } from './config.js';
 
 /* Google's signing keys, cached and rotated by jose itself. */
 const JWKS = createRemoteJWKSet(new URL('https://www.googleapis.com/oauth2/v3/certs'));
@@ -20,8 +21,10 @@ function allowList() {
 /* The export decided this in client-side JS, which anyone could edit. The whole
    point of moving saves to a server is that the check happens here instead. */
 export async function requireAdmin(req) {
-  const clientId = process.env.GOOGLE_CLIENT_ID;
-  if (!clientId) throw new HttpError(500, 'GOOGLE_CLIENT_ID is not configured');
+  /* Same source the sign-in button uses, so the audience check can never drift
+     from the client that actually issued the token. */
+  const clientId = googleClientId();
+  if (!clientId) throw new HttpError(500, 'no google client id is configured');
 
   const allowed = allowList();
   if (!allowed.length) throw new HttpError(500, 'ADMIN_EMAILS is not configured');
