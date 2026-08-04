@@ -33,7 +33,9 @@ var GATE_HTML =
   + '<p class="gs dim">restricted area — sign in with an authorized google account</p>'
   + '<div class="gsi" id="gsi"></div>'
   + '<p class="gm" id="gate-msg" role="status"></p>'
-  + '<p class="gnote">sign-in only works on a domain listed as an authorized javascript origin for this OAuth client.</p>'
+  + '<p class="gnote">if google says <b>origin_mismatch</b>, this exact origin is missing from the '
+  + 'OAuth client’s <b>authorized javascript origins</b> — note the <b>www</b>, it counts as a different origin:'
+  + '<br><span class="gorigin" id="gate-origin"></span></p>'
   + '<button class="gx" id="gate-close" type="button">esc · cancel</button>'
   + '</div></div>';
 
@@ -593,6 +595,7 @@ function preview() {
 
 function openGate() {
   $('gate').hidden = false;
+  $('gate-origin').textContent = location.origin;
   loadGSI();
 }
 function closeGate() {
