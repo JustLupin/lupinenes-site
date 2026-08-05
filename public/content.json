@@ -4,7 +4,7 @@
   "avatar": "/uploads/avatar.webp",
   "banner": "/uploads/banner-e3ec885606.webp",
   "bgColor": "#8c8c8c",
-  "bgScale": 0.7,
+  "bgScale": 0.5,
   "links": [
     {
       "id": "l1",
@@ -146,7 +146,7 @@
       "label": "EN",
       "texts": {
         "username": "LupinEnes",
-        "tagline": "interested in: coding · photography · 3d · pixel art",
+        "tagline": "he/him",
         "bio": "Hi! I’m Enes. I’m interested in a lot of things like coding, photography, 3D modeling, drawing, pixel art, and 3D printers — and I’m always trying to learn more. I love playing games, talking with my friends, watching anime, and reading manga!",
         "aboutLabel": "About",
         "statusLabels": {
@@ -279,7 +279,7 @@
       "label": "TR",
       "texts": {
         "username": "LupinEnes",
-        "tagline": "ilgilendiğim şeyler: kodlama · fotoğrafçılık · 3d · pixel art",
+        "tagline": "(erkek)",
         "bio": "Selam! Ben Enes. Kodlama, fotoğrafçılık, 3D modelleme, çizim, pixel art ve 3D yazıcılar gibi birçok şeyle ilgileniyorum — ve her zaman daha fazlasını öğrenmeye çalışıyorum. Oyun oynamayı, arkadaşlarımla sohbet etmeyi, anime izlemeyi ve manga okumayı çok seviyorum!",
         "aboutLabel": "Hakkımda",
         "statusLabels": {
